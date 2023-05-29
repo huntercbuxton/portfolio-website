@@ -37,7 +37,7 @@ ul.navigation {
 
 .navbar {
     position: fixed;
-    top: 80px;
+    top: 79px;
     z-index: 1;
 }
 
@@ -64,7 +64,7 @@ ul.navigation {
     }
     
     .navbar.visible {
-        top: 80px;
+        top: 79px;
         animation-name: example2;
         animation-duration: 4s;
         transition:all .75s ease;

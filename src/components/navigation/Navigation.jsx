@@ -12,7 +12,6 @@ export default function Navigation(props) {
   const { show, itemClassName, handleNavToggleClick } = props;
 
 
-
     return (
         <>
             <nav className="navigation">
@@ -21,22 +20,22 @@ export default function Navigation(props) {
                 </div>
                 <div className={"navbar" +  itemClassName}>
                     <div className="navigation-item">
-                        <a href='' className="navigation-brand">
+                        <a href='/' onClick={handleNavToggleClick} className="navigation-brand">
                             <img src="/img/logo.png" alt="Hunter C Buxton website logo"/>
                         </a>
                     </div>
                     <ul className="navigation">
                         <li className="navigation-item">
-                            <Link to={`about`}>About</Link>
+                            <Link to={`about`} onClick={handleNavToggleClick}>About</Link>
                         </li>
                         <li className="navigation-item">
-                            <Link to={`portfolio`}>Portfolio</Link>
+                            <Link to={`portfolio`} onClick={handleNavToggleClick}>Portfolio</Link>
                         </li>
                         <li className="navigation-item">
-                            <Link to={`writing`}>Writing</Link>
+                            <Link to={`writing`} onClick={handleNavToggleClick}>Writing</Link>
                         </li>
                         <li className="navigation-item">
-                            <Link to={`contact`}>Contact</Link>
+                            <Link to={`contact`} onClick={handleNavToggleClick}>Contact</Link>
                         </li>
                     </ul>
                 </div>
