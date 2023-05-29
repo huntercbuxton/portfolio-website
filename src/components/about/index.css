@@ -1,0 +1,15 @@
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content img {
+    width: 400px;
+    max-width: 70%;
+}
+
+.about-content p {
+    width: 75%;
+}

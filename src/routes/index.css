@@ -1,0 +1,23 @@
+
+@media (max-width: 991px) {
+    .nav-outlet-wrapper {
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-outlet-wrapper.visible {
+        padding-left: 300px;
+        animation-name: example3;
+        animation-duration: 4s;
+        transition:all .2s ease;
+    }
+    
+    .nav-outlet-wrapper.hidden {
+        padding-left: 0;
+        animation-name: example4;
+        animation-duration: 4s;
+        transition:all .2s ease;
+    }
+    
+}

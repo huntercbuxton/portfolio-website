@@ -5,10 +5,6 @@
     left: 0;   
 }
 
-nav.navigation {
-
-}
-
 ul.navigation {
     display: flex;
     list-style: none;
@@ -36,15 +32,41 @@ ul.navigation {
     text-decoration: none;
 }
 
+
+.navbar {
+    position: fixed;
+    top: 100px;
+}
+
+
 @media (max-width: 991px) {
 
     nav.navigation {
         width: 100vw;
     }
 
+    .navbar, .navigation-toggle {
+        width: 100vw;
+    }
+
     ul.navigation {
         align-items: center;
     }
+
+    .navbar.hidden {
+        top: -100vh;
+        animation-name: example;
+        animation-duration: 4s;
+        transition:all .2s ease;
+    }
+    
+    .navbar.visible {
+        top: 100px;
+        animation-name: example2;
+        animation-duration: 4s;
+        transition:all .2s ease;
+    }
+    
 }
 
 @media (min-width: 992px) {
@@ -55,23 +77,20 @@ ul.navigation {
     ul.navigation {
        align-items: flex-start;
     }
+
+    .navbar.hidden {
+        left: -300px;
+        animation-name: example;
+        animation-duration: 4s;
+        transition:all .2s ease;
+    }
+    
+    .navbar.visible {
+        left: 0;
+        animation-name: example2;
+        animation-duration: 4s;
+        transition:all .2s ease;
+    }
+    
 }
 
-.navbar {
-    position: fixed;
-    top: 100px;
-}
-
-.navbar.hidden {
-    left: -300px;
-    animation-name: example;
-    animation-duration: 4s;
-    transition:all .2s ease;
-}
-
-.navbar.visible {
-    left: 0;
-    animation-name: example2;
-    animation-duration: 4s;
-    transition:all .2s ease;
-}
