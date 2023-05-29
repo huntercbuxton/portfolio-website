@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Personal Portfolio Wesbite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+built as a react app, replacing old php website
+live version: [https://www.huntercbuxton.com]()
 
-## Available Scripts
+## dev notes
 
-In the project directory, you can run:
+Docs/References:
 
-### `npm start`
+- digitalocean react app deployment: [https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-to-digitalocean-app-platform]()
+- with ngnx : [https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-with-nginx-on-ubuntu-20-04]()
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## design notes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Colors:
 
-### `npm test`
+- #000000 (black) background 1 font3, (logo, theme color, link icons, nav bar, footer)
+- #ffffff (white) font 1
+- #DA532C (bright red) logo font, pinned tab icon
+- #E4093B (muted red) font 2
+- #8bd3cb (light grey) font 3
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fonts:
 
-### `npm run build`
+- icon font: 'Gilda Display'
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Resources/Links:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- square icon images : [https://squaremyimage.com]()
+- generate favicons etc: [https://realfavicongenerator.net]()
+- canva design for logo : [https://www.canva.com/design/DAFjhkZGNgs/0KzC47fJZDn7b0HzCFnoUA/edit]()
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## deployment notes
 
-### `npm run eject`
+### server setup steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. [setting up server block with nginx on ubuntu vps](<https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04#step-5-%E2%80%93-setting-up-server-blocks-(recommended)>)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+note: need to modify the sites-available entry when using react-router, otherwise it won't work on any routes besides the web root. Update the 'location' so that all requests are sent to the index.html file, like this:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+location / {
+        try_files $uri $uri/ /index.html =404;
+}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. [enabling secure connection](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04)
+3. [deploy react app with nginx](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-with-nginx-on-ubuntu-20-04)
 
-## Learn More
+### deployment steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+# SIT deployment
+$ npm run build
+$ scp -r ./build/* hunter@huntercbuxton.com:/var/www/sit/html
+```
