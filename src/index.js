@@ -8,6 +8,7 @@ import ErrorPage from './components/ErrorPage';
 import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
+import Writing from './components/writing/Writing';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,11 @@ const router = createBrowserRouter([
         element: <Portfolio/>,
       },
       {
-        path: "contact",
+        path: "/writing",
+        element: <Writing />
+      },
+      {
+        path: "/contact",
         element: <Contact/>
       }
     ]

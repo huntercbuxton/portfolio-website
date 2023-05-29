@@ -1,0 +1,29 @@
+section > h2 {
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+ul.portfolio {
+    list-style-type: none;
+}
+
+ul.portfolio > li {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+header.portfolio-item {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+header.portfolio-item h3 {
+    text-indent: 30px;
+    margin-left: 15px;
+}
+
+img.portfolio-icon {
+    width: 3em;
+    height: 3em;
+}

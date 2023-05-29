@@ -33,6 +33,9 @@ export default function Navigation(props) {
                             <Link to={`portfolio`}>Portfolio</Link>
                         </li>
                         <li className="navigation-item">
+                            <Link to={`writing`}>Writing</Link>
+                        </li>
+                        <li className="navigation-item">
                             <Link to={`contact`}>Contact</Link>
                         </li>
                     </ul>
