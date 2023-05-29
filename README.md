@@ -5,10 +5,15 @@ live version: [https://www.huntercbuxton.com]()
 
 ## dev notes
 
-Docs/References:
+### Docs/References:
 
-- digitalocean react app deployment: [https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-to-digitalocean-app-platform]()
+digitalocean react app deployment: 
+- [https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-to-digitalocean-app-platform]()
 - with ngnx : [https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-with-nginx-on-ubuntu-20-04]()
+
+react router setup: 
+- [https://reactrouter.com/en/main/start/tutorial]()
+
 
 ## design notes
 
