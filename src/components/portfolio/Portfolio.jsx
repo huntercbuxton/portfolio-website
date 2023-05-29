@@ -1,4 +1,5 @@
 
+import {Footer} from '../Template'
 import './index.css'
 
 export default function Portfolio(props) {
@@ -57,6 +58,7 @@ export default function Portfolio(props) {
                     </li> */}
                 </ul>
             </section>
+            <Footer/>
         </>
     )
 }
