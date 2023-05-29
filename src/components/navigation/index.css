@@ -3,6 +3,8 @@
     position: fixed;
     top: 0;
     left: 0;   
+    z-index: 2;
+    height: 80px;
 }
 
 ul.navigation {
@@ -35,7 +37,8 @@ ul.navigation {
 
 .navbar {
     position: fixed;
-    top: 100px;
+    top: 80px;
+    z-index: 1;
 }
 
 
@@ -57,14 +60,14 @@ ul.navigation {
         top: -100vh;
         animation-name: example;
         animation-duration: 4s;
-        transition:all .2s ease;
+        transition:all .75s ease;
     }
     
     .navbar.visible {
-        top: 100px;
+        top: 80px;
         animation-name: example2;
         animation-duration: 4s;
-        transition:all .2s ease;
+        transition:all .75s ease;
     }
     
 }
@@ -82,14 +85,14 @@ ul.navigation {
         left: -300px;
         animation-name: example;
         animation-duration: 4s;
-        transition:all .2s ease;
+        transition:all .75s ease;
     }
     
     .navbar.visible {
         left: 0;
         animation-name: example2;
         animation-duration: 4s;
-        transition:all .2s ease;
+        transition:all .75s ease;
     }
     
 }

@@ -6,7 +6,7 @@
 
 @media (max-width: 991px) {
     .nav-outlet-wrapper {
-        padding-top: 100px;
+        padding-top: 80px;
     }
 }
 
@@ -20,14 +20,14 @@
         padding-left: 300px;
         animation-name: example3;
         animation-duration: 4s;
-        transition: all .2s ease;
+        transition: all .75s ease;
     }
 
     .nav-outlet-wrapper.hidden {
         padding-left: 100px;
         animation-name: example4;
         animation-duration: 4s;
-        transition: all .2s ease;
+        transition: all .75s ease;
     }
 
 }
