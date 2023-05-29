@@ -1,6 +1,7 @@
 # Personal Portfolio Wesbite
 
 built as a react app, replacing old php website
+
 live version: [https://www.huntercbuxton.com]()
 
 ## dev notes
@@ -55,7 +56,10 @@ location / {
 ### deployment steps:
 
 ```
-# SIT deployment
-$ npm run build
-$ scp -r ./build/* hunter@huntercbuxton.com:/var/www/sit/html
+# (example - SIT deployment)
+npm run build
+scp -r ./build/* hunter@huntercbuxton.com:/var/www/sit/html
 ```
+may have to update the file permissions at the web root, if the server returns a 403:
+
+```sudo chmod -R 755 /var/www/huntercbuxton.com```
