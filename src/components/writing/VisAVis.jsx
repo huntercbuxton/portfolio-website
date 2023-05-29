@@ -3,10 +3,10 @@
 export default function VisAVis() {
 
     return (
-        <article>
-            <header>
-                <h3>Vis à Vis</h3>
-                <p>Published in the Fall 2016 Issue of <a target="_blank" href="https://inscape.byu.edu/2017/01/27/vis-a-vis/">Inscape literary magazine</a></p>
+        <article  className="writing">
+            <header className="writing">
+                <h1>Vis à Vis</h1>
+                <p className="subtitle">Published in the Fall 2016 Issue of <a target="_blank" href="https://inscape.byu.edu/2017/01/27/vis-a-vis/">Inscape literary magazine</a></p>
             </header>
             <p>It’s July 31, 2016. The time is 11:58 am. After six long days, I’ve come back to my lakeside apartment in Slidell, Louisiana for a few hours of solitude. I retrieve a pad of graphing paper and a pen for my thoughts. It’s a habit I keep every few days and that I’ve kept for as long as I can remember.</p>
             <p>It is an aberrant pastime. Becoming a good writer is an uncommon aspiration and an even rarer accomplishment. The dedication I give to my own words is, for a young man in a material world, a dubious venture at best. But it’s not my career that’s on my mind right now, and it’s not the caprices of such a tired time for culture which lights the fire between my thoughts. It’s just this right here: the action, the inaction, the dream of writing. For me, the blank page is at once a search for, and the artificer of, clarity. Words have become as inseparable and indispensable to my life as breath and water. To live is to understand, and to write is to seek understanding. I can’t imagine one without the other. Writing is, by the author’s assumption, a venture towards truth. In that light, it seems only normal that “writer” should always be a bit of a byword. It’s what we already accept as the way of the world. As was quoted by Michael Lewis, “Truth is like poetry. And people hate poetry.”</p>

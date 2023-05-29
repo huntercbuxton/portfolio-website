@@ -1,0 +1,38 @@
+header.writing {
+    padding: 3em;
+}
+
+h2.writing {
+    flex-grow: 0;
+    padding: 3em 3em 0 0;
+}
+
+ol.writing {
+    padding: 1em 3em 3em 0;
+}
+
+ol.writing.contents {
+    flex-grow: 2;
+}
+
+ol.writing.contents > li, ul.writing > li {
+    line-height: 2em;
+    vertical-align: center;
+    text-indent: 1em;
+}
+
+ol.writing.contents > li > a, ul.writing > li > a  {
+    text-decoration: underline;
+    color: blue;
+}
+
+main.writing {
+    display: block;
+}
+
+.subtitle {
+    text-align: center;
+    text-indent: 0;
+    padding-top: 1em;
+}
+
