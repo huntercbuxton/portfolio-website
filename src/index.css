@@ -36,3 +36,7 @@ code {
 section {
   padding: 20px;
 }
+
+.footnote {
+  font-size: small;
+}
