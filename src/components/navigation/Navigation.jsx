@@ -21,7 +21,7 @@ export default function Navigation(props) {
                 </div>
                 <div className={"navbar" +  itemClassName}>
                     <div className="navigation-item">
-                        <a href='/' className="navigation-brand">
+                        <a href='' className="navigation-brand">
                             <img src="/img/logo.png" alt="Hunter C Buxton website logo"/>
                         </a>
                     </div>

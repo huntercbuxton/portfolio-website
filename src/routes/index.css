@@ -2,11 +2,14 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+   
 }
 
 @media (max-width: 991px) {
     .nav-outlet-wrapper {
         padding-top: 80px;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
     }
 }
 
