@@ -49,13 +49,6 @@ export default function Portfolio(props) {
                         </header>
                         <p>This site, and the various subdomains set up as support pages, etc.</p>
                     </li>
-                    {/* <li>
-                        <header class="portfolio-item">
-                            <img src="/img/lindastaker_favicon.ico" alt="Linda Staker Favicon" />
-                                <h3 class="portfolio"><a target="_blank" rel="noopener" href="http://lindastakerart.com">lindastakerart.com</a></h3>
-                        </header>
-                        <p>This website was commissioned by an artist who lives near me and wanted a place to showcase her work. It is the first website I created after graduating in April 2020. (The final touches have been slightly delayed, due to covid-related precautions, but will be finished soon). Have a look at this artist's wonderful creative work!</p>
-                    </li> */}
                 </ul>
             </section>
             {/* <section>
