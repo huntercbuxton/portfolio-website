@@ -19,7 +19,7 @@ export default function Navigation(props) {
                     <FontAwesomeIcon onClick={handleNavToggleClick} icon={faBars} size="2x" className="side-navbar-toggle" />
                 </div>
                 <div className={"navbar" +  itemClassName}>
-                    <div className="navigation-item">
+                    <div className="navigation-item navigation-brand">
                         <a href='/' onClick={handleNavToggleClick} className="navigation-brand">
                             <img src="/img/logo.png" alt="Hunter C Buxton website logo"/>
                         </a>
