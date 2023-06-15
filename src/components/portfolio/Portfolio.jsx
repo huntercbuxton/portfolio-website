@@ -21,7 +21,7 @@ export default function Portfolio(props) {
                             <img class="portfolio-icon" src="/img/patzer-icon.png" alt="patzer logo" />
                                 <h3 class="portfolio">Patzer (iOS application)</h3>
                         </header>
-                        <p>This is my current project: an augmented-reality chess application. Coming to the App store in April 2023.</p>
+                        <p>This is my current project: an augmented-reality chess application. Coming to the Apple App Store in August 2023.</p>
                     </li>
                 </ul>
             </section>
