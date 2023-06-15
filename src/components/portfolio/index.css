@@ -1,6 +1,7 @@
 section > h2 {
-    margin-bottom: 40px;
-    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    /* font-weight: normal; */
 }
 
 ul.portfolio {
@@ -18,12 +19,21 @@ header.portfolio-item {
     height: 50px;
 }
 
-header.portfolio-item h3 {
-    text-indent: 30px;
-    margin-left: 15px;
-}
-
 img.portfolio-icon {
     width: 3em;
     height: 3em;
+}
+
+@media (max-width: 991px) {
+   header.portfolio-item h3 {
+        text-indent: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    header.portfolio-item h3 {
+        text-indent: 30px;
+        margin-left: 15px;
+    }
 }

@@ -4,7 +4,7 @@
     top: 0;
     left: 0;   
     z-index: 2;
-    height: 80px;
+    height: 60px;
 }
 
 ul.navigation {
@@ -12,10 +12,15 @@ ul.navigation {
     list-style: none;
     flex-direction: column;
     justify-content: center;
+   
 }
 
 .navigation-item {
     padding: 1em;
+}
+
+.navigation-item.navigation-brand {
+    padding: 0;
 }
 
 .navigation-brand {
@@ -54,6 +59,11 @@ ul.navigation {
 
     ul.navigation {
         align-items: center;
+        padding-bottom: 10px;
+    }
+
+    li.navigation-item a {
+        font-size: large;
     }
 
     .navbar.hidden {
@@ -79,6 +89,12 @@ ul.navigation {
 
     ul.navigation {
        align-items: flex-start;
+   
+    }
+
+    li.navigation-item a {
+        font-size: x-large;
+        padding-left: 20px;
     }
 
     .navbar.hidden {

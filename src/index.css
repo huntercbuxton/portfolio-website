@@ -11,6 +11,8 @@
 h1 {
   font-weight: normal;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 p  {

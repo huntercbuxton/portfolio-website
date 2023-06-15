@@ -2,7 +2,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-   
+    vertical-align: center;
 }
 
 @media (max-width: 991px) {
@@ -17,6 +17,7 @@
 
     .nav-outlet-wrapper {
         padding-right: 100px;
+        padding-top: 20px;
     }
 
     .nav-outlet-wrapper.visible {
