@@ -58,6 +58,17 @@ export default function Portfolio(props) {
                     </li> */}
                 </ul>
             </section>
+            {/* <section>
+                <h2>Scientific/Mathematics Tools</h2>
+                <ul>
+                    <li>
+                        <header class="portfolio-item">
+                            <h3>Kinetic Monte Carlo Simulations of Crystal Growth Behavior</h3>
+                        </header>
+                        <p>An ongoing project which I started during my research assistant position at Brigham Yound University, under the instruction of Dr. Tim Krumwiede. This project simulates the growth of crystalline structures at an atomic scale, by utilizing a Kinetic Monte Carlo implementation to predict bonding based on initial conditions such as temperature, position, and initial structure. The original purpose of this research was to provide a firmare solution to the problem of unpredictable behavior of materials applied with 3D printing hardware.</p>
+                    </li>
+                </ul>
+            </section> */}
             <Footer/>
         </>
     )
