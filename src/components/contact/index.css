@@ -30,6 +30,8 @@ li.profile-link {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    min-width: 200px;
 }
 
 a:has(i)  {
