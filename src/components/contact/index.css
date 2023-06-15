@@ -34,21 +34,19 @@ li.profile-link {
     min-width: 200px;
 }
 
-a:has(i)  {
+a:has(i) {
     text-decoration: none;
-    
 }
 
-.profile-link:hover > a > * {
+.profile-link:hover>a>* {
     color: #8bd3cb;
 }
 
-.profile-link:hover > a > i {
+.profile-link:hover>a>i {
     background-color: #8bd3cb;
     border-color: #8bd3cb;
     color: black;
 }
-
 
 i.link-icon {
     font-size: 72px;

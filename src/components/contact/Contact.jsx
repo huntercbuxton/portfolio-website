@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Footer} from '../Template'
+import { Footer } from '../Template'
 
 import './index.css'
 
@@ -37,18 +37,20 @@ export default function Contact(props) {
             <h1>Contact</h1>
             <main>
                 <ul className="contact">
-                        {linkedProfiles.map((profile, i) => {
-                            return (
-                                <li key={i} className="profile-link">
-                                    <ProfileLink url={profile.url}> <i class={`fa fa-${profile.platform.toLowerCase()} link-icon`} ></i> </ProfileLink>
-                                    <a className="linked-text text-box" href={profile.url}>{`@${profile.handle}`}</a>
-                                </li>
-                            );
-                        })}
-                    </ul>
-                    <p>If you are looking for support regarding one of my apps or websites, please email <a target="_blank" href="mailto: huntercbuxton@icloud.com">huntercbuxton@icloud.com</a> instead for a faster reply.</p >
+                    {linkedProfiles.map((profile, i) => {
+                        return (
+                            <li key={i} className="profile-link">
+                                <ProfileLink url={profile.url}> 
+                                    <i class={`fa fa-${profile.platform.toLowerCase()} link-icon`} ></i>
+                                </ProfileLink>
+                                <a className="linked-text text-box" href={profile.url}>{`@${profile.handle}`}</a>
+                            </li>
+                        );
+                    })}
+                </ul>
+                <p>If you are looking for support regarding one of my apps or websites, please email <a target="_blank" href="mailto: huntercbuxton@icloud.com">huntercbuxton@icloud.com</a> instead for a faster reply.</p >
             </main>
-            <Footer/>
+            <Footer />
         </>
     )
 }
