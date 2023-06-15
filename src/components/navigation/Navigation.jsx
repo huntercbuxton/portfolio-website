@@ -1,16 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars as faBars } from '@fortawesome/free-solid-svg-icons'
 
 import './index.css'
 
-
-
 export default function Navigation(props) {
 
-  const { show, itemClassName, handleNavToggleClick } = props;
-
+    const { show, itemClassName, handleNavToggleClick } = props;
 
     return (
         <>
@@ -18,10 +15,10 @@ export default function Navigation(props) {
                 <div className="navigation-toggle">
                     <FontAwesomeIcon onClick={handleNavToggleClick} icon={faBars} size="2x" className="side-navbar-toggle" />
                 </div>
-                <div className={"navbar" +  itemClassName}>
+                <div className={"navbar" + itemClassName}>
                     <div className="navigation-item navigation-brand">
                         <a href='/' onClick={handleNavToggleClick} className="navigation-brand">
-                            <img src="/img/logo.png" alt="Hunter C Buxton website logo"/>
+                            <img src="/img/logo.png" alt="Hunter C Buxton website logo" />
                         </a>
                     </div>
                     <ul className="navigation">
@@ -40,7 +37,6 @@ export default function Navigation(props) {
                     </ul>
                 </div>
             </nav>
-            {/* <div className={"navbar-spacer" + itemClassName}></div> */}
         </>
     )
 }
