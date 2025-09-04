@@ -57,9 +57,12 @@ location / {
 
 ```
 # (example - SIT deployment)
-npm run build
-scp -r ./build/* hunter@huntercbuxton.com:/var/www/sit/html
+$       npm run build
+$       scp -r ./build/* hunter@huntercbuxton.com:/var/www/sit/html
+# for prod release, change the scp command to this:
+$       scp -r ./build/* hunter@huntercbuxton.com:/var/www/huntercbuxton.com/html
 ```
 may have to update the file permissions at the web root, if the server returns a 403:
+
 
 ```sudo chmod -R 755 /var/www/huntercbuxton.com```
