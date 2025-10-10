@@ -7,8 +7,18 @@ export default function Portfolio(props) {
         <>
             <h1>Portfolio</h1>
             <section>
+                <h2 className="frameworks">Frameworks</h2>
+                <ul className="portfolio">
+                    <li>
+                        <header class="portfolio-item">
+                            <img class="portfolio-icon" src="/img/npm_logo.png" alt="olive tree solidarity logo" />
+                            <h3 class="portfolio">Tootles Kofi (React Framework)</h3>
+                        </header>
+                        <p>A UI resource for react devlopers using kofi data</p>
+                    </li>
+                </ul>
                 <h2>Web Design:</h2>
-                <ul class="portfolio">
+                <ul className="portfolio">
                     <li>
                         <header class="portfolio-item">
                             <img class="portfolio-icon" src="https://olivetreesolidarity.com/logo_fullsize.png" alt="olive tree solidarity logo" />
@@ -41,7 +51,7 @@ export default function Portfolio(props) {
             </section>
             <section>
                 <h2>Apps & Web Services</h2>
-                <ul class="portfolio">
+                <ul className="portfolio">
                     {/* 
                     <li>
                         <header class="portfolio-item">
@@ -71,7 +81,7 @@ export default function Portfolio(props) {
                             <h3 class="portfolio">PersonalKanban Productivity app for iOS+iPadOS (discontinued)</h3>
                         </header>
                         <p>An implementation of the Kanban Method for personal workflows, currently available on the App Store. You can visit the <a rel="noopener" href="https://personalkanban.huntercbuxton.com">support site</a> or view the public <a target="_blank" rel="noopener" href="https:github.com/huntercbuxton/PersonalKanbanApp">GitHub repo</a> to learn more.</p>
-                    </li> 
+                    </li>
                     <li>
                         <header class="portfolio-item">
                             <img class="portfolio-icon" src="/img/transparent-MURCH_LOGO-TrianglesOnly.png" alt="MURCH logo" />
