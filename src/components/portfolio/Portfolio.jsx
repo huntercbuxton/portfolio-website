@@ -91,7 +91,7 @@ export default function Portfolio(props) {
                         thumbnail_desc={"PersonalKanban logo"}
                         description={""}
                         technologies={['Swift', 'CoreData', 'Firebase RTDB']} >
-                        <p>An implementation of the Kanban Method for personal workflows, currently available on the App Store. You can visit the <a rel="noopener" href="https://personalkanban.huntercbuxton.com">support site</a> or view the public <a target="_blank" rel="noopener" href="https:github.com/huntercbuxton/PersonalKanbanApp">GitHub repo</a> to learn more.</p>
+                        <p>An implementation of the Kanban Method for personal workflows, currently available on the App Store. You can view the public <a target="_blank" rel="noopener" href="https://github.com/huntercbuxton/PersonalKanbanApp">GitHub repo</a>  {/* or visit the <a rel="noopener" href="https://personalkanban.huntercbuxton.com">support site</a> or */} to learn more.</p> 
                     </PortfolioListItem>
                     <PortfolioListItem
                         title={"MURCH fit-matching tool (discontinued)"}
