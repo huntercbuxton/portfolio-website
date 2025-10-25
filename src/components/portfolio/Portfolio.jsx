@@ -1,28 +1,34 @@
 
+import React from 'react'
 import { Footer } from '../Template'
 import './index.css'
+import portfolio_items from '../../data/portfolio_items.json'
+
+const PortfolioItem = ({ logo_url, logo_alt, title, link_url, summary_txt, children }) => {
+    return (
+        <React.Fragment>
+            <header class="portfolio-item">
+                <img class="portfolio-icon" src={logo_url} alt={logo_alt} />
+                <h3 class="portfolio"><a target="_blank" rel="noopener" href={link_url}>{title}</a></h3>
+            </header>
+            { summary_txt && (<p>{summary_txt}</p>) }
+            { children }
+        </React.Fragment>
+    )
+}
+
+
 
 export default function Portfolio(props) {
+    
     return (
         <>
             <h1>Portfolio</h1>
             <section>
                 <h2>Web Design:</h2>
                 <ul class="portfolio">
-                    <li>
-                        <header class="portfolio-item">
-                            <img class="portfolio-icon" src="/img/npm_logo.png" alt="npm logo" />
-                            <h3 class="portfolio"><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/tootles-kofi">Tootles-kofi (React Library)</a></h3>
-                        </header>
-                        <p>A react library to help web developers clone a kofi shop page in their own website (since kofi does not support embedding).</p>
-                    </li>
-                    <li>
-                        <header class="portfolio-item">
-                            <img class="portfolio-icon" src="https://olivetreesolidarity.com/logo_fullsize.png" alt="olive tree solidarity logo" />
-                            <h3 class="portfolio">Olive Tree Solidarity (website)</h3>
-                        </header>
-                        <p>A resource of educational material and community events organized by the great people of Olive Tree Solidarity Coalition in Provo, UT.  </p>
-                    </li>
+                    {portfolio_items.items.map((item, i) => <li><PortfolioItem logo_url={item.thumbnail} logo_alt={item.thumbnail_desc} title={item.title} link_url={item.link_url} summary_txt={item.summary_txt} /></li>)
+                    }  
                     <li>
                         <header class="portfolio-item">
                             <img class="portfolio-icon" src="https://crochetedly.com/img/crochetedly_thumbnail_logo.PNG" alt="crochetedly logo" />
@@ -56,13 +62,6 @@ export default function Portfolio(props) {
                                 <h3 class="portfolio">Shoop</h3>
                         </header>
                         <p>An AI driven shopping assistant which helps you search out your unique fit by unconventional means.  Shoop provides detailed measurement analysis so you never have to visit a fitting room or have to return a wrong size.  Even better, you'll finally escape the repetitive, off-topic search pool of search sponsored or trending content repetitive, incomplete search results composed </p>
-                    </li>
-                     <li>
-                        <header class="portfolio-item">
-                            <img class="portfolio-icon" src="https://koficopy.io" alt="shoop logo" />
-                                <h3 class="portfolio">Kofi Copy</h3>
-                        </header>
-                        <p>A suite of services and libraries you can use to copy data and views from your kofi shop, and integrate your shop into custome web applications.</p>
                     </li>  
                     */}
                     <li>

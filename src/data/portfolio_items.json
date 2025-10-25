@@ -1,0 +1,18 @@
+{
+    "items": [
+        {
+            "thumbnail":"/img/npm_logo.png",
+            "thumbnail_desc":"npm logo",
+            "link_url":"https://www.npmjs.com/package/tootles-kofi",
+            "title":"Tootles-kofi (React Library)",
+            "summary_txt":"A react library to help web developers clone a kofi shop page in their own website (since kofi does not support embedding)."
+        },
+        {
+            "thumbnail":"https://olivetreesolidarity.com/logo_fullsize.png",
+            "thumbnail_desc":"olive tree solidarity logo",
+            "link_url":"https://olivetreesolidarity.com",
+            "title":"Olive Tree Solidarity Website",
+            "summary_txt":"A resource of educational material and community events organized by the great people of Olive Tree Solidarity Coalition in Provo, UT."
+        } 
+    ]
+}
