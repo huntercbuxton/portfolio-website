@@ -47,7 +47,7 @@ export default function Portfolio(props) {
                         thumbnail_desc={"Crochetedly logo"}
                         description={''}
                         technologies={['React', 'JavaScript', 'css']} >
-                        <p>A portfolio of the beautiful crocheted creations made by my wonderful partner, Tori (happy birthday!) Go to <a href="https://crochetedly.com">crochetedly.com</a>  to check out the designs currently available for purchase on her shop, or <a href="https://crochetedly.com/socials">request to commission</a> your own unique idea.</p>
+                        <p>A portfolio of the beautiful crocheted creations made by my wonderful partner, Tori (happy birthday!) Go to <a href="https://crochetedly.com/shop">crochetedly.com/shop</a>  to check out the designs currently available for purchase on her shop, or <a href="https://crochetedly.com/socials">request to commission</a> your own unique idea.</p>
                     </PortfolioListItem>
                     <PortfolioListItem
                         title={"Katheryn Stott Buxton Artist Portfolio"}
