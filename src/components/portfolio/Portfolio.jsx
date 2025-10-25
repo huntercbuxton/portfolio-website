@@ -11,6 +11,13 @@ export default function Portfolio(props) {
                 <ul class="portfolio">
                     <li>
                         <header class="portfolio-item">
+                            <img class="portfolio-icon" src="/img/npm_logo.png" alt="npm logo" />
+                            <h3 class="portfolio"><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/tootles-kofi">Tootles-kofi (React Library)</a></h3>
+                        </header>
+                        <p>A react library to help web developers clone a kofi shop page in their own website (since kofi does not support embedding).</p>
+                    </li>
+                    <li>
+                        <header class="portfolio-item">
                             <img class="portfolio-icon" src="https://olivetreesolidarity.com/logo_fullsize.png" alt="olive tree solidarity logo" />
                             <h3 class="portfolio">Olive Tree Solidarity (website)</h3>
                         </header>
