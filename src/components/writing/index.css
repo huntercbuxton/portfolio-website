@@ -23,7 +23,7 @@ ol.writing.contents > li, ul.writing > li {
 
 ol.writing.contents > li > a, ul.writing > li > a  {
     text-decoration: underline;
-    color: blue;
+    color: white;
 }
 
 main.writing {

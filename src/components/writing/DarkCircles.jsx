@@ -1,5 +1,8 @@
 import './index.css'
 
+
+const ContentListItem = ({ title, link_url }) => <li> <a target="_blank" rel="noopener noreferrer" href={link_url}>{title}</a> </li>
+
 export default function DarkCircles() {
 
     return (
@@ -13,21 +16,11 @@ export default function DarkCircles() {
 
                 <h2 className="writing">Contents:</h2>
                 <ol className="writing contents">
-                    <li>
-                        <a target="_blank" href="https://docs.google.com/document/d/1HearLOqVyTU2khalp9cl8pBysqxTdN6mG-mtBY26TJk/edit?usp=sharing">Prologue</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://docs.google.com/document/d/1TIdbstOu6lrrnXog0UWIJNeRn_yyUOr8bAXZ3vr96ys/edit?usp=sharing">Chapter 1</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://docs.google.com/document/d/1pKWV5Ac5zzHuRkg7FqpTHoEHzkhxM3F4Mui8oUhHafQ/edit?usp=sharing">Chapter 2</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://docs.google.com/document/d/13WBWhU9e4AlizeOPzQdL7c-eURWD5FdpTxjvCCF6KMY/edit?usp=sharing">Chapter 3</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://docs.google.com/document/d/1PlNApU_Y2F2RLBEAcvyFKxTvvvWMBqvPWOKAspQ4XyA/edit?usp=sharing">Chapter 4</a>
-                    </li>
+                    <ContentListItem title={"Prologue"} link_url={"https://docs.google.com/document/d/1HearLOqVyTU2khalp9cl8pBysqxTdN6mG-mtBY26TJk/edit?usp=sharing"} />
+                    <ContentListItem title={"Chapter 1"} link_url={"https://docs.google.com/document/d/1TIdbstOu6lrrnXog0UWIJNeRn_yyUOr8bAXZ3vr96ys/edit?usp=sharing"} />
+                    <ContentListItem title={"Chapter 2"} link_url={"https://docs.google.com/document/d/1pKWV5Ac5zzHuRkg7FqpTHoEHzkhxM3F4Mui8oUhHafQ/edit?usp=sharing"} />
+                    <ContentListItem title={"Chapter 3"} link_url={"https://docs.google.com/document/d/13WBWhU9e4AlizeOPzQdL7c-eURWD5FdpTxjvCCF6KMY/edit?usp=sharing"} />
+                    <ContentListItem title={"Chapter 4"} link_url={"https://docs.google.com/document/d/1PlNApU_Y2F2RLBEAcvyFKxTvvvWMBqvPWOKAspQ4XyA/edit?usp=sharing"} />
                 </ol>
             </main>
         </>
