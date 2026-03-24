@@ -9,20 +9,31 @@ import DarkCircles from './DarkCircles'
 import './index.css'
 
 
+const WritingPortfolioPreview = ({ title, link, genre }) => {
+    return (<li>
+        <a href={link} >{title}</a>
+        {genre && <span >{`    (${genre})`}</span>}
+    </li>)
+}
+
+
 const WritingPortfolio = () => {
     return (
         <>
-           <header className="writing">
+            <header className="writing">
                 <h1>Writing</h1>
-           </header>
+            </header>
             <main className="writing">
                 <ul className="writing">
-                    <li>
-                        <a href="/writing/vis-a-vis" >Vis à Vis</a>
-                    </li>
-                    <li>
-                        <a href="/writing/dark-circles" >Dark Circles</a>
-                    </li>
+                    <WritingPortfolioPreview
+                        title={"Vis à Vis"}
+                        link={"/writing/vis-a-vis"}
+                        genre={"nonfiction essay"} />
+                    <WritingPortfolioPreview
+                        title={"Dark Circles"}
+                        link={"/writing/dark-circles"}
+                        genre={"novel"} />
+
                 </ul>
             </main>
         </>
