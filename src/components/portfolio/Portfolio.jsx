@@ -8,7 +8,7 @@ const PortfolioListItem = ({ title, link_url, thumbnail, thumbnail_desc, descrip
             <header class="portfolio-item">
                 <img class="portfolio-icon" src={thumbnail} alt={thumbnail_desc} />
                 <h3 class="portfolio">
-                    {link_url ? <a target="_blank" rel="noopener" href={link_url}>{title}</a> : <>{title}</>}
+                    {link_url ? <a target="_blank" rel="noopener noreferrer" href={link_url}>{title}</a> : <>{title}</>}
                 </h3>
             </header>
             {description && (<p>{description} </p>)}
@@ -42,7 +42,7 @@ export default function Portfolio(props) {
                         technologies={['React', 'JavaScript', 'css']} />
                     <PortfolioListItem
                         title={"Crochetedly Portfolio & Shop"}
-                        link_url={"https://www.npmjs.com/package/tootles-kofi"}
+                        link_url={"https://www.crochetedly.com"}
                         thumbnail={"https://crochetedly.com/img/crochetedly_thumbnail_logo.PNG"}
                         thumbnail_desc={"Crochetedly logo"}
                         description={''}
@@ -67,7 +67,7 @@ export default function Portfolio(props) {
             </section>
             <section>
                 <h2>Apps & Services</h2>
-                <ul class="portfolio"> 
+                <ul class="portfolio">
                     <PortfolioListItem
                         title={"Patzer (iOS application)"}
                         link_url={""}
@@ -82,7 +82,7 @@ export default function Portfolio(props) {
                         thumbnail_desc={"PersonalKanban logo"}
                         description={""}
                         technologies={['Swift', 'CoreData', 'Firebase RTDB']} >
-                        <p>An implementation of the Kanban Method for personal workflows, currently available on the App Store. You can view the public <a target="_blank" rel="noopener" href="https://github.com/huntercbuxton/PersonalKanbanApp">GitHub repo</a>  {/* or visit the <a rel="noopener" href="https://personalkanban.huntercbuxton.com">support site</a> or */} to learn more.</p> 
+                        <p>An implementation of the Kanban Method for personal workflows, currently available on the App Store. You can view the public <a target="_blank" rel="noopener noreferrer" href="https://github.com/huntercbuxton/PersonalKanbanApp">GitHub repo</a>  {/* or visit the <a rel="noopener" href="https://personalkanban.huntercbuxton.com">support site</a> or */} to learn more.</p>
                     </PortfolioListItem>
                     <PortfolioListItem
                         title={"SHOOP AI fit-matching tool (discontinued)"}
@@ -90,7 +90,7 @@ export default function Portfolio(props) {
                         thumbnail={"/img/shoop_icon.png"}
                         thumbnail_desc={"SHOOP logo"}
                         description={"Finding clothes with a fit you like can be frustrating, especially when shopping online. With SHOOP, your own AI personal shopper, you can find clothes which match your preferred fit easily. Shoop uses an extensive database of clothing measurements and other metadata, to run an AI driven search algorithm which matches the fit of your favorite clothes with new designs from other brands."}
-                        technologies={['Python', 'OpenAi API', 'AWS Amplify/S3/Lambdas', 'DynamoDB', 'GraphQL','Selenium', 'React']} />
+                        technologies={['Python', 'OpenAi API', 'AWS Amplify/S3/Lambdas', 'DynamoDB', 'GraphQL', 'Selenium', 'React']} />
                 </ul>
             </section>
             <Footer />
