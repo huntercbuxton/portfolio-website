@@ -5,7 +5,7 @@ import { Footer } from '../Template'
 import './index.css'
 
 
-const ProfileLink = props => <a href={props.url} className="profile-link"> {props.children} </a>
+const ProfileLink = props => <a target="_blank" rel="noopener noreferrer" href={props.url} className="profile-link"> {props.children} </a>
 
 export default function Contact(props) {
 
@@ -20,11 +20,11 @@ export default function Contact(props) {
             url: 'https://www.linkedin.com/in/huntercbuxton',
             handle: 'huntercbuxton'
         },
-        {
-            platform: 'Twitter',
-            url: 'https://www.twitter.com/HCBuxton',
-            handle: 'HCBuxton'
-        },
+        // {
+        //     platform: 'Twitter',
+        //     url: 'https://www.twitter.com/HCBuxton',
+        //     handle: 'HCBuxton'
+        // },
         {
             platform: 'Instagram',
             url: 'https://www.instagram.com/huntercbuxton',
@@ -43,7 +43,7 @@ export default function Contact(props) {
                                 <ProfileLink url={profile.url}>
                                     <i class={`fa fa-${profile.platform.toLowerCase()} link-icon`} ></i>
                                 </ProfileLink>
-                                <a className="linked-text text-box" href={profile.url}>{`@${profile.handle}`}</a>
+                                <a target="_blank" rel="noopener noreferrer"  className="linked-text text-box" href={profile.url}>{`@${profile.handle}`}</a>
                             </li>
                         );
                     })}
