@@ -13,20 +13,20 @@ import Writing from './components/writing/Writing';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
-    errorElement: <ErrorPage/>,
+    element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "",
-        element: <About/>,
+        element: <About />,
       },
       {
         path: "/about",
-        element: <About/>,
+        element: <About />,
       },
       {
         path: "/portfolio",
-        element: <Portfolio/>,
+        element: <Portfolio />,
       },
       {
         path: "/writing",
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <Contact/>
+        element: <Contact />
       }
     ]
   },
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
