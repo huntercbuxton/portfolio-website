@@ -43,12 +43,12 @@ export default function Contact(props) {
                                 <ProfileLink url={profile.url}>
                                     <i class={`fa fa-${profile.platform.toLowerCase()} link-icon`} ></i>
                                 </ProfileLink>
-                                <a target="_blank" rel="noopener noreferrer"  className="linked-text text-box" href={profile.url}>{`@${profile.handle}`}</a>
+                                <a target="_blank" rel="noopener noreferrer" className="linked-text text-box" href={profile.url}>{`@${profile.handle}`}</a>
                             </li>
                         );
                     })}
                 </ul>
-                <p>If you are looking for support regarding one of my apps or websites, please email <a target="_blank" rel="noopener noreferrer" href="mailto: huntercbuxton@icloud.com">huntercbuxton@icloud.com</a> instead for a faster reply.</p >
+                <p>If you are looking for support regarding one of my apps or websites, please email <a target="_blank" rel="noopener noreferrer" href="mailto: huntercbuxton@protonmail.com">huntercbuxton@protonmail.com</a> instead for a faster reply.</p >
             </main>
             <Footer />
         </>
