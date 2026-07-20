@@ -15,7 +15,7 @@
 
 ``` 
 $       npm run build
-$       scp -r ./build/* hunter@huntercbuxton.com:/var/www/sit/html 
+$       scp -r ./build/* hunter@bugglue.com:/var/www/dev.huntercbuxton.com/html
 ```
 
 **prod install:**
