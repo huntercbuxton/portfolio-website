@@ -1,16 +1,15 @@
-# Personal Portfolio Wesbite 
+# Personal Portfolio Wesbite
 
-## urls:
+## urls
 
 | environment | url |
 |---|---|
 | prod | [https://www.huntercbuxton.com]() |
-| nonprod | [https://www.sit.huntercbuxton.com]() | 
+| nonprod | [https://www.sit.huntercbuxton.com]() |
 
+## deployment instructions
 
-## deployment instructions: 
-
-### install steps:
+### install steps
 
 **nonprod install:**
 
@@ -35,7 +34,6 @@ If the server returns a 403 after install, may have to update the file permissio
 sudo chmod -R 755 /var/www/huntercbuxton.com
 ```
 
-
 ## design notes
 
 Colors:
@@ -56,17 +54,16 @@ Resources/Links:
 - generate favicons etc: [https://realfavicongenerator.net]()
 - canva design for logo : [https://www.canva.com/design/DAFjhkZGNgs/0KzC47fJZDn7b0HzCFnoUA/edit]()
 
-
 ## development notes
 
-### Technologies/Dependencies:
+### Technologies/Dependencies
 
 - package manager: npm  
 - notable dependencies: react-router-dom, fortawesome
 - hosting: digitalocean ubuntu vps, using nginx
 - domain name licensing: namecheap
 
-### Learning Resources:
+### Learning Resources
 
 - [react router setup tutorial](https://reactrouter.com/en/main/start/tutorial) 
 - [react app deployment tutorial (digitialocean)](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-to-digitalocean-app-platform)
@@ -74,7 +71,7 @@ Resources/Links:
 - [how to enable secure connection tutorial (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04)
 - [deploy react app with nginx tutorial (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-with-nginx-on-ubuntu-20-04)
 
-### how to setup new nginx server block:
+### how to setup new nginx server block
 
 [tutorial: setting up server block with nginx on ubuntu vps](<https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04#step-5-%E2%80%93-setting-up-server-blocks-(recommended)>)
 
