@@ -43,7 +43,7 @@ export default function Portfolio(props) {
                     <PortfolioListItem
                         title={"Crochetedly Portfolio & Shop"}
                         link_url={"https://www.crochetedly.com"}
-                        thumbnail={"https://crochetedly.com/img/crochetedly_thumbnail_logo.PNG"}
+                        thumbnail={"img/crochetedly_icon.png"}
                         thumbnail_desc={"Crochetedly logo"}
                         description={''}
                         technologies={['React', 'JavaScript', 'css']} >
