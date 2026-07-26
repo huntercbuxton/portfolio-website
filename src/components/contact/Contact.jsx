@@ -41,7 +41,7 @@ export default function Contact(props) {
                         return (
                             <li key={i} className="profile-link">
                                 <ProfileLink url={profile.url}>
-                                    <i class={`fa fa-${profile.platform.toLowerCase()} link-icon`} ></i>
+                                    <i className={`fa fa-${profile.platform.toLowerCase()} link-icon`} ></i>
                                 </ProfileLink>
                                 <a target="_blank" rel="noopener noreferrer" className="linked-text text-box" href={profile.url}>{`@${profile.handle}`}</a>
                             </li>
