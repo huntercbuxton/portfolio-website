@@ -5,9 +5,9 @@ import './index.css'
 const PortfolioListItem = ({ title, link_url, thumbnail, thumbnail_desc, description, technologies, children }) => {
     return (
         <li>
-            <header class="portfolio-item">
-                <img class="portfolio-icon" src={thumbnail} alt={thumbnail_desc} />
-                <h3 class="portfolio">
+            <header className="portfolio-item">
+                <img className="portfolio-icon" src={thumbnail} alt={thumbnail_desc} />
+                <h3 className="portfolio">
                     {link_url ? <a target="_blank" rel="noopener noreferrer" href={link_url}>{title}</a> : <>{title}</>}
                 </h3>
             </header>
@@ -25,7 +25,7 @@ export default function Portfolio(props) {
             <h1>Portfolio</h1>
             <section>
                 <h2>Web Design:</h2>
-                <ul class="portfolio">
+                <ul className="portfolio">
                     <PortfolioListItem
                         title={"Tootles-kofi (react library)"}
                         thumbnail={"/img/npm_logo.png"}
@@ -67,7 +67,7 @@ export default function Portfolio(props) {
             </section>
             <section>
                 <h2>Apps & Services</h2>
-                <ul class="portfolio">
+                <ul className="portfolio">
                     <PortfolioListItem
                         title={"Patzer (iOS application)"}
                         link_url={""}
