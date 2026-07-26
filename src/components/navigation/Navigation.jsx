@@ -7,7 +7,7 @@ import './index.css'
 
 export default function Navigation(props) {
 
-    const { show, itemClassName, handleNavToggleClick } = props;
+    const { itemClassName, handleNavToggleClick } = props;
 
     return (
         <>
