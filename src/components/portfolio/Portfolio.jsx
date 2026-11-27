@@ -1,4 +1,3 @@
-import React from 'react'
 import { Footer } from '../Template'
 import './index.css'
 
@@ -19,7 +18,7 @@ const PortfolioListItem = ({ title, link_url, thumbnail, thumbnail_desc, descrip
 }
 
 
-export default function Portfolio(props) {
+export default function Portfolio() {
     return (
         <>
             <h1>Portfolio</h1>

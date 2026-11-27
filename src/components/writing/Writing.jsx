@@ -41,7 +41,7 @@ const WritingPortfolio = () => {
 }
 
 
-export default function Writing(props) {
+export default function Writing() {
 
     let { title } = useParams();
 
