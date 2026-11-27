@@ -8,14 +8,21 @@ View the live website at <https://huntercbuxton.com>.
 
 - Node.js (v20+)
 - React.js
-- JSON (local storage)
+- React Router
+- react-uuid
+- fortawesome
+- JSON for local storage
+- vite for building and testing
+- eslint for linting
 
 ## Quick Start
 
-### Installation
+### installation
 
-run ```./install.sh <release_branch_name>```in project root. If no branch name is passed as an argument, the main branch will be installed by default.
-
-### Rehydration
-
-run ```./rehydrate.sh``` in project root
+```bash
+git fetch
+git checkout <branch name>
+npm ci
+npm run test
+npm run build
+```
