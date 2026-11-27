@@ -12,7 +12,7 @@ export default function DarkCircles() {
             </header>
 
             <main className="writing">
-                <p>'Dark Circles' is my first novel, which I wrote in 2016. I put publishing on the back burner after a few rejections but am now looking for a publisher again. I've decided that the original manuscript could use some revision, so I am currently in the process of altering some themes of the story, one chapter at a time.  I will post links to the revised chapters here as they become available. If you have feedback, I would love to hear it! You can get in touch with me by email at <a href="mailto: hunterbuxton@byu.edu">hunterbuxton@byu.edu</a>.</p>
+                <p>&apos;Dark Circles&apos; is my first novel, which I wrote in 2016. I put publishing on the back burner after a few rejections but am now looking for a publisher again. I&apos;ve decided that the original manuscript could use some revision, so I am currently in the process of altering some themes of the story, one chapter at a time.  I will post links to the revised chapters here as they become available. If you have feedback, I would love to hear it! You can get in touch with me by email at <a href="mailto: hunterbuxton@byu.edu">hunterbuxton@byu.edu</a>.</p>
 
                 <h2 className="writing">Contents:</h2>
                 <ol className="writing contents">

@@ -1,13 +1,10 @@
-import React from 'react';
-
 import { Footer } from '../Template'
 
 import './index.css'
 
-
 const ProfileLink = props => <a target="_blank" rel="noopener noreferrer" href={props.url} className="profile-link"> {props.children} </a>
 
-export default function Contact(props) {
+export default function Contact() {
 
     const linkedProfiles = [
         {
@@ -19,12 +16,7 @@ export default function Contact(props) {
             platform: 'LinkedIn',
             url: 'https://www.linkedin.com/in/huntercbuxton',
             handle: 'huntercbuxton'
-        },
-        // {
-        //     platform: 'Twitter',
-        //     url: 'https://www.twitter.com/HCBuxton',
-        //     handle: 'HCBuxton'
-        // },
+        }, 
         {
             platform: 'Instagram',
             url: 'https://www.instagram.com/huntercbuxton',
